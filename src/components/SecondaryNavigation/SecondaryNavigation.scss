@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.sec-nav {
+  display: flex;
+  align-items: center;
+  &__icon {
+    margin-left: 1.5rem;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    transition: $transition-time;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 10rem;
+  &__links {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__link {
+    color: $off-white;
+    opacity: 0.55;
+    margin: 1.5rem 0;
+    margin-right: 5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: $transition-time;
+    &:hover {
+      opacity: 1;
+      color: $accent-color;
+    }
+  }
+  &__service {
+    display: inline-flex;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: $off-white;
+    opacity: 0.55;
+    border: 2px solid $off-white;
+    transition: $transition-time;
+    &:hover {
+      color: $off-black;
+      background-color: $off-white;
+      opacity: 1;
+    }
+  }
+  &__copy {
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: $off-white;
+    opacity: 0.55;
+  }
+}

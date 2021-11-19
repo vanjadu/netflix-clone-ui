@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+  overflow: hidden;
+  border: 1px solid #fafafa8c;
+  cursor: pointer;
+  transition: $transition-time;
+  &:hover {
+    transform: scale(1.15);
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
