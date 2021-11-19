@@ -5,7 +5,9 @@ import Segment from '../Segment';
 const Titles = () => {
   return (
     <div className="titles">
-      <Segment />
+      <Segment title="Popular on Netflix" />
+      <Segment title="Continue watching" />
+      <Segment title="Watch it again" />
     </div>
   );
 };

@@ -1,12 +1,21 @@
 import React from 'react';
 import './Segment.scss';
 // Assets
-import PlaceholderImage from '../../assets/thumbnail-top10-h.jpg'
+import PlaceholderImage from '../../assets/thumbnail-top10-h.jpg';
+import SomeImage from '../../assets/thumbnail-top10.jpg';
+import OtherImage from '../../assets/thumbnail.jpg';
 
-const Segment = () => {
+const Segment = ({title}) => {
   return (
-    <div>
-      <h1>Segment</h1>
+    <div className="segment">
+      <p className="segment__title">{title}</p>
+      <div className="segment__container">
+        <img src={PlaceholderImage} alt="thumbnail" className="segment__thumbnail" />
+        <img src={PlaceholderImage} alt="thumbnail" className="segment__thumbnail" />
+        <img src={PlaceholderImage} alt="thumbnail" className="segment__thumbnail" />
+        <img src={PlaceholderImage} alt="thumbnail" className="segment__thumbnail" />
+        <img src={PlaceholderImage} alt="thumbnail" className="segment__thumbnail" />
+      </div>
     </div>
   );
 };
